@@ -25,7 +25,6 @@
 //function signatures and documentation to be added later
 
 //This function sets all the pins off for the line sensors.
-//Contributors:
 void lineSensorsCleanUp(void);
 
 //This function sets up all the pins for the linesensors that are being used.

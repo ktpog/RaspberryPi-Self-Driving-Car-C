@@ -58,27 +58,22 @@
 #define MOTOR_FOUR_S             motorStop(MOTOR_FOUR_ENABLER, MOTOR_FOUR_CONTROL, MOTOR_FOUR_CONTROL_TWO) //makes motor four stop.
 
 //It sets up the motors so that they can be used by the program.
-//Contributors:
 void motorsSet(void);
 
 //tells the motor enabler pin #, the pin #'s of the controllers, and the direction(BACKWARD or FORWARD)
 //and makes the motor move to that direction.
-//Contributors:
 void motorMove(int enabler, int control, int control2, int direction, int power);
 
 //takes the motor enabler pin # and the pin #'s of the controllers
 //and makes the motor stop.
-//Contributors:
 void motorStop(int enabler, int control, int control2);
 
 //Thread function that makes the motor go forward.
 //the void pointer must point to either 1 or 2 to indicate the motor to control.
 //returns NULL.
-//Contributors:
 void *motorToControlForward(void *ptr);
 
 //This function stops all the motors.
-//Contributors:
 void motorsCleanUp(void);
 
 //Adjusts the speed of the motors in the right(0) or left(1) side of the car

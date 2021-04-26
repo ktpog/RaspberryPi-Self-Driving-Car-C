@@ -30,19 +30,15 @@
 #define WHEEL_DIAMETER          6.0                     //in centimeters.
 
 //It sets up the pins needed for the speed sensor. 
-//Contributors:
 void speedSensorSet(void);
 
 //reads the pulses that the speed sensor sees in the time frame specified. It returns the pulses that were counted.
-//Contributors:
 int readPulses(int pin);
 
 //calculates and returns the speed of the wheel.
-//Contributors:
 double calculateSpeed(int totalPulses);
 
 //Function to be used in threads to display the speed read by the speed sensor.
-//Contributors:
 void *useSpeedSensor(void *ptr);
 
 //This function returns a double with the average speed of the motors.
